@@ -1,0 +1,338 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{02C3FB05-F3C6-48C5-9D3F-1BA17D79D185}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Otomasyon</RootNamespace>
+    <AssemblyName>Otomasyon</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Anaekran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Anaekran.Designer.cs">
+      <DependentUpon>Anaekran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="eserDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>eserDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="eserislem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eserislem.Designer.cs">
+      <DependentUpon>eserislem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="eserler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eserler.Designer.cs">
+      <DependentUpon>eserler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="eserperson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eserperson.Designer.cs">
+      <DependentUpon>eserperson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="personelanaekran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="personelanaekran.Designer.cs">
+      <DependentUpon>personelanaekran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="personelgiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="personelgiris.Designer.cs">
+      <DependentUpon>personelgiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="personelislem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="personelislem.Designer.cs">
+      <DependentUpon>personelislem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="personsifre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="personsifre.Designer.cs">
+      <DependentUpon>personsifre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include=".cs" />
+    <Compile Include="Resources\uyeislem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\uyeislem.Designer.cs">
+      <DependentUpon>uyeislem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rezerve.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rezerve.Designer.cs">
+      <DependentUpon>Rezerve.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rezerveislem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rezerveislem.Designer.cs">
+      <DependentUpon>Rezerveislem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uyeler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uyeler.Designer.cs">
+      <DependentUpon>uyeler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uyelogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uyelogin.Designer.cs">
+      <DependentUpon>uyelogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uyeol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uyeol.Designer.cs">
+      <DependentUpon>uyeol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yoneticianaekran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yoneticianaekran.Designer.cs">
+      <DependentUpon>yoneticianaekran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yoneticilogincs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yoneticilogincs.Designer.cs">
+      <DependentUpon>yoneticilogincs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yonsifredegis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yonsifredegis.Designer.cs">
+      <DependentUpon>yonsifredegis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ziyaretcianaekran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ziyaretcianaekran.Designer.cs">
+      <DependentUpon>ziyaretcianaekran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ziyaretsaat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ziyaretsaat.Designer.cs">
+      <DependentUpon>ziyaretsaat.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Anaekran.resx">
+      <DependentUpon>Anaekran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eserislem.resx">
+      <DependentUpon>eserislem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eserler.resx">
+      <DependentUpon>eserler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eserperson.resx">
+      <DependentUpon>eserperson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="personelanaekran.resx">
+      <DependentUpon>personelanaekran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="personelgiris.resx">
+      <DependentUpon>personelgiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="personelislem.resx">
+      <DependentUpon>personelislem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="personsifre.resx">
+      <DependentUpon>personsifre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Resources\uyeislem.resx">
+      <DependentUpon>uyeislem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rezerve.resx">
+      <DependentUpon>Rezerve.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rezerveislem.resx">
+      <DependentUpon>Rezerveislem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uyeler.resx">
+      <DependentUpon>uyeler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uyelogin.resx">
+      <DependentUpon>uyelogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uyeol.resx">
+      <DependentUpon>uyeol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yoneticianaekran.resx">
+      <DependentUpon>yoneticianaekran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yoneticilogincs.resx">
+      <DependentUpon>yoneticilogincs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yonsifredegis.resx">
+      <DependentUpon>yonsifredegis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ziyaretcianaekran.resx">
+      <DependentUpon>ziyaretcianaekran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ziyaretsaat.resx">
+      <DependentUpon>ziyaretsaat.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="eserDataSet.xsc">
+      <DependentUpon>eserDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="eserDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>eserDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="eserDataSet.xss">
+      <DependentUpon>eserDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exitt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exitt1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exitt2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exitt3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arkaplnn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\geri1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eser1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eser2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\museum1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\museum.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\museum2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eser3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ziyaret.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uyelik.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uyelik1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eser4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vazo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vazo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vazo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ticket1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ticket2.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
